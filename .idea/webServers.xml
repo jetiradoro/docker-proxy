@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="25f41ffe-f9a6-40ed-ba31-40b9903c9fc5" name="proxy demos">
+        <fileTransfer rootFolder="/var/www/docker-proxy" accessType="SFTP" host="207.154.212.156" port="22" sshConfigId="37fb7452-015e-4a63-9380-0919c2c20635" sshConfig="DEMOS-DOCKER" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="60000" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
