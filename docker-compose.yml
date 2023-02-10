@@ -11,6 +11,7 @@ services:
       - "vhost:/etc/nginx/vhost.d"
       - "certs:/etc/nginx/certs"
       - "/var/run/docker.sock:/tmp/docker.sock:ro"
+      - "./nginx.conf:/etc/nginx/nginx.conf:ro"
     restart: "always"
     networks:
       - "docker-net"
@@ -19,6 +20,8 @@ services:
       - "443:443"
       - "8978:8978"
       - "9000:9000"
+      - "8085:8085"
+      # - "32400:32400"
 
   letsencrypt:
     image: "nginxproxy/acme-companion:latest"
